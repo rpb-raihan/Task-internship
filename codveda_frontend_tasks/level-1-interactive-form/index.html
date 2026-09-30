@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Registration Form</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="form-card">
+      <div class="intro"><p>CODVEDA FRONT-END TASK</p><h1>Create your account</h1><span>Real-time JavaScript validation with accessible feedback.</span></div>
+      <form id="signupForm" novalidate>
+        <label>Full Name<input id="name" name="name" type="text" autocomplete="name" placeholder="Raihan Parvez"><small id="nameError"></small></label>
+        <label>Email<input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"><small id="emailError"></small></label>
+        <label>Phone Number<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+8801XXXXXXXXX"><small id="phoneError"></small></label>
+        <label>Password<input id="password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters"><small id="passwordError"></small></label>
+        <div class="strength"><span id="strengthBar"></span></div>
+        <button type="submit">Create Account</button>
+        <p id="success" class="success" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
